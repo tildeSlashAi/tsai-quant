@@ -30,3 +30,6 @@ def exponential_moving_average():
 def weighted_moving_average():
     pass
 
+def functional_moving_average():
+    pass
+
