@@ -1,0 +1,2 @@
+class Prices:
+    pass

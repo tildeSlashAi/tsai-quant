@@ -13,12 +13,14 @@ DailyPrices is a Data Class format for Daily High, Low, Open, Close, Volume and 
 import pandas_datareader.data as web
 
 # local imports
+from._prices import Prices
 from ._ticker import Ticker
 from ._sourcemanager import SourceManager
 
-class DailyPrices:
+class DailyPrices(Prices):
 
     def __init__(self, ticker, start, end):
+        super().__init__()
         
         if isinstance(ticker, Ticker):
             self.ticker = ticker
